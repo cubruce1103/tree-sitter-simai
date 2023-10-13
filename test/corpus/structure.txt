@@ -1,0 +1,22 @@
+===
+division, pseudo, each, and notes
+===
+(1){1}1/2`3/4,E
+---
+(inote
+    (setBpm (bpm))
+    (setDenominator)
+    (division
+        (pseudo
+            (taps)
+            (taps))
+        (pseudo
+            (taps)
+            (taps)))
+    (end))
+
+
+
+
+
+

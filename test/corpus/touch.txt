@@ -1,0 +1,38 @@
+===
+touch
+===
+(120){2}A1,E
+---
+(inote
+    (setBpm (bpm))
+    (setDenominator)
+    (division (pseudo
+        (touch)
+        ))
+    (end))
+
+===
+touch hold
+===
+(120){2}Ch[2:1],E
+---
+(inote
+    (setBpm (bpm))
+    (setDenominator)
+    (division (pseudo
+        (touchHold (duration (measure)))
+        ))
+    (end))
+
+===
+touch - firework effect
+===
+(120){2}A1f,E
+---
+(inote
+    (setBpm (bpm))
+    (setDenominator)
+    (division (pseudo
+        (touch (decorationTouch (setFirework)))
+        ))
+    (end))

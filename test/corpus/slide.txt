@@ -1,0 +1,84 @@
+===
+slide
+===
+(120){2}1-4[4:1],E
+---
+(inote
+    (setBpm (bpm))
+    (setDenominator)
+    (division (pseudo
+        (slides
+            (slide (shape) (durationDelay (measure))))))
+    (end))
+    
+===
+slide - duration
+===
+(120){4}1-4[160#8:3],1-4[160#2],1-4[3##1.5],1-4[3##8:3],1-4[3##160#8:3],E
+---
+(inote
+    (setBpm (bpm))
+    (setDenominator)
+    (division (pseudo
+        (slides
+            (slide (shape) (durationDelay (bpm) (measure))))))
+    (division (pseudo
+        (slides
+            (slide (shape) (durationDelay (bpm) (length))))))
+    (division (pseudo
+        (slides
+            (slide (shape) (durationDelay (length) (length))))))
+    (division (pseudo
+        (slides
+            (slide (shape) (durationDelay (length) (measure))))))
+    (division (pseudo
+        (slides
+            (slide (shape) (durationDelay (length) (bpm) (measure) )))))
+    (end))
+
+===
+slide - break slides
+===
+(120){4}1-4[4:1]b,E
+---
+(inote
+    (setBpm (bpm))
+    (setDenominator)
+    (division (pseudo
+        (slides
+            (slide (shape) (durationDelay (measure)) (decorationSlide (setBreak))))))
+    (end))
+
+===
+slide - multiple slides
+===
+(120){2}1-4[4:1]*^4[4:1],E
+---
+(inote
+    (setBpm (bpm))
+    (setDenominator)
+    (division (pseudo
+        (slides
+            (slide (shape) (durationDelay (measure)))
+            (slide (shape) (durationDelay (measure)))
+            )))
+    (end))
+
+===
+slide - chaining slides
+===
+(120){2}1-4-7-2-5-8-3-6-1[4:1],
+1-6[8:1]-3[8:1],E
+---
+(inote
+    (setBpm (bpm))
+    (setDenominator)
+    (division (pseudo
+        (slides
+            (slide (shape) (shape) (shape) (shape) (shape) (shape) (shape) (shape) (durationDelay (measure)))
+        )))
+    (division (pseudo
+        (slides
+            (slide (shape) (duration (measure)) (shape) (duration (measure)))
+        )))
+    (end))

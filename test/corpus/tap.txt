@@ -1,0 +1,21 @@
+===
+Basic
+===
+(120){4}1,E
+---
+(inote
+    (setBpm (bpm))
+    (setDenominator)
+    (division (pseudo (taps)))
+    (end))
+
+===
+Break
+===
+(120){4}1b,E
+---
+(inote
+    (setBpm (bpm))
+    (setDenominator)
+    (division (pseudo (tap (decorationTap (setBreak)))))
+    (end))

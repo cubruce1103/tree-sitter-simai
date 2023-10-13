@@ -1,0 +1,22 @@
+{
+  "name": "tree-sitter-simai",
+  "version": "1.0.0",
+  "description": "tba",
+  "main": "bindings/node",
+  "scripts": {
+    "test": "tree-sitter test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nan": "^2.17.0"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.20.7"
+  },
+  "tree-sitter": [
+    {
+      "scope": "maidata.txt"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+===
+hold - duration
+===
+(120){1}5h[2:1],4h[#5.678],4h[150#2:1],E
+---
+(inote
+    (setBpm (bpm))
+    (setDenominator)
+    (division (pseudo (hold
+        (duration
+            (measure)))))
+    (division (pseudo (hold
+        (duration
+            (length)))))
+    (division (pseudo (hold
+        (duration
+            (bpm) (measure)))))
+    (end))
+
+===
+hold - break hold
+===
+(120){1}5hb[2:1],5bh[2:1],E
+---
+(inote
+    (setBpm (bpm))
+    (setDenominator)
+    (division (pseudo (hold
+        (decorationHold (setBreak))
+        (duration
+            (measure)))))
+    (division (pseudo (hold
+        (decorationHold (setBreak))
+        (duration
+            (measure)))))
+    (end))

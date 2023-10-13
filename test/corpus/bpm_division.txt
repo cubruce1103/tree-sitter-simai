@@ -1,0 +1,34 @@
+===
+Basic
+===
+(120)
+{4},E
+---
+(inote
+    (setBpm (bpm))
+    (setDenominator)
+    (division)
+    (end))
+
+===
+Decimals
+===
+(120.1415926)
+{4.718281828},E
+---
+(inote
+    (setBpm (bpm))
+    (setDenominator)
+    (division)
+    (end))
+
+===
+BPM: Specify Length instead
+===
+(#0.35){4},E
+---
+(inote
+    (setBpm (length))
+    (setDenominator)
+    (division)
+    (end))

@@ -1,0 +1,622 @@
+[
+  {
+    "type": "bpm",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "decorationHold",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "setBreak",
+          "named": true
+        },
+        {
+          "type": "setEx",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "decorationSlide",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "setBreak",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "decorationStar",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "setBreak",
+          "named": true
+        },
+        {
+          "type": "setEx",
+          "named": true
+        },
+        {
+          "type": "setFakeTap",
+          "named": true
+        },
+        {
+          "type": "setNoStar",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "decorationTap",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "setBreak",
+          "named": true
+        },
+        {
+          "type": "setEx",
+          "named": true
+        },
+        {
+          "type": "setFakeStar",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "decorationTouch",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "setFirework",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "division",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "pseudo",
+          "named": true
+        },
+        {
+          "type": "setBpm",
+          "named": true
+        },
+        {
+          "type": "setDenominator",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "duration",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "bpm",
+          "named": true
+        },
+        {
+          "type": "length",
+          "named": true
+        },
+        {
+          "type": "measure",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "durationDelay",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "bpm",
+          "named": true
+        },
+        {
+          "type": "length",
+          "named": true
+        },
+        {
+          "type": "measure",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "end",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "hold",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "decorationHold",
+          "named": true
+        },
+        {
+          "type": "duration",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "inote",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "division",
+          "named": true
+        },
+        {
+          "type": "end",
+          "named": true
+        },
+        {
+          "type": "setBpm",
+          "named": true
+        },
+        {
+          "type": "setDenominator",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "length",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "measure",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "pseudo",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "hold",
+          "named": true
+        },
+        {
+          "type": "slides",
+          "named": true
+        },
+        {
+          "type": "tap",
+          "named": true
+        },
+        {
+          "type": "taps",
+          "named": true
+        },
+        {
+          "type": "touch",
+          "named": true
+        },
+        {
+          "type": "touchHold",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "setBpm",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "bpm",
+          "named": true
+        },
+        {
+          "type": "length",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "setDenominator",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "setFakeStar",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "setNoStar",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "shape",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "slide",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "decorationSlide",
+          "named": true
+        },
+        {
+          "type": "duration",
+          "named": true
+        },
+        {
+          "type": "durationDelay",
+          "named": true
+        },
+        {
+          "type": "shape",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "slides",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "decorationStar",
+          "named": true
+        },
+        {
+          "type": "slide",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "tap",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "decorationTap",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "taps",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "touch",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "decorationTouch",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "touchHold",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "decorationTouch",
+          "named": true
+        },
+        {
+          "type": "duration",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "!",
+    "named": false
+  },
+  {
+    "type": "#",
+    "named": false
+  },
+  {
+    "type": "##",
+    "named": false
+  },
+  {
+    "type": "$",
+    "named": false
+  },
+  {
+    "type": "$$",
+    "named": false
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": "*",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": "-",
+    "named": false
+  },
+  {
+    "type": ".",
+    "named": false
+  },
+  {
+    "type": "/",
+    "named": false
+  },
+  {
+    "type": "0",
+    "named": false
+  },
+  {
+    "type": "1",
+    "named": false
+  },
+  {
+    "type": "2",
+    "named": false
+  },
+  {
+    "type": "3",
+    "named": false
+  },
+  {
+    "type": "4",
+    "named": false
+  },
+  {
+    "type": "5",
+    "named": false
+  },
+  {
+    "type": "6",
+    "named": false
+  },
+  {
+    "type": "7",
+    "named": false
+  },
+  {
+    "type": "8",
+    "named": false
+  },
+  {
+    "type": "9",
+    "named": false
+  },
+  {
+    "type": ":",
+    "named": false
+  },
+  {
+    "type": "<",
+    "named": false
+  },
+  {
+    "type": ">",
+    "named": false
+  },
+  {
+    "type": "?",
+    "named": false
+  },
+  {
+    "type": "A",
+    "named": false
+  },
+  {
+    "type": "B",
+    "named": false
+  },
+  {
+    "type": "C",
+    "named": false
+  },
+  {
+    "type": "C1",
+    "named": false
+  },
+  {
+    "type": "C2",
+    "named": false
+  },
+  {
+    "type": "D",
+    "named": false
+  },
+  {
+    "type": "E",
+    "named": false
+  },
+  {
+    "type": "V",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "^",
+    "named": false
+  },
+  {
+    "type": "`",
+    "named": false
+  },
+  {
+    "type": "h",
+    "named": false
+  },
+  {
+    "type": "p",
+    "named": false
+  },
+  {
+    "type": "pp",
+    "named": false
+  },
+  {
+    "type": "q",
+    "named": false
+  },
+  {
+    "type": "qq",
+    "named": false
+  },
+  {
+    "type": "s",
+    "named": false
+  },
+  {
+    "type": "setBreak",
+    "named": true
+  },
+  {
+    "type": "setEx",
+    "named": true
+  },
+  {
+    "type": "setFakeTap",
+    "named": true
+  },
+  {
+    "type": "setFirework",
+    "named": true
+  },
+  {
+    "type": "v",
+    "named": false
+  },
+  {
+    "type": "w",
+    "named": false
+  },
+  {
+    "type": "z",
+    "named": false
+  },
+  {
+    "type": "{",
+    "named": false
+  },
+  {
+    "type": "}",
+    "named": false
+  }
+]
